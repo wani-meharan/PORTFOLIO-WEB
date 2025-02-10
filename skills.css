@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+:root {
+    --text-color: #f5f5f5;
+    --hover-color: #12f7ff;
+    --bg-color: #250821;
+    --secon-bg-color: #292e33;
+    --big-font: 2.5rem;
+    --neon-box-shadow: 0 0 .5rem #12f7ff;
+    --h2-font: 3rem;
+    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.3), 0 0 20px rgba(18, 247, 255, 0.3), 0 0 30px rgba(18, 247, 255, 0.3), 0 0 40px rgba(18, 247, 255, 0.3), 0 0 70px rgba(18, 247, 255, 0.3), 0 0 80px rgba(18, 247, 255, 0.3), 0 0 100px rgba(18, 247, 255, 0.3), 0 0 150px rgba(18, 247, 255, 0.3);
+
+}
+
+
+.main-text h2{
+    text-align: center;
+    margin-top: 18px;
+    font-size: 45px;
+    font-family: "Roboto", serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-column-gap: 50px;
+}
+
+.skill-bar{
+    margin-bottom: 2rem;
+}
+
+.skill-bar .info p img{
+    height: 35px;
+    width: 35px;
+}
+
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+    font-size: 3rem;
+
+}
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 5px;
+
+}
+
+.skill-bar .bar span{
+    /* width: auto; */
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+}
+
+.bar .html{
+    width: 80%;
+    animation: html 2s; 
+
+}
+.bar .css{
+ width: 73%;
+    animation: css 3s; 
+
+}
+.bar .js{
+    width: 60%;
+    animation: js 3.5s; 
+
+}
+.bar .figma{
+    width: 77%;
+    animation: figma 4s; 
+
+}
+.bar .nodejs{
+    width: 55%;
+    animation: nodejs 4.5s; 
+
+}
+.bar .mongodb{
+    width: 53%;
+    animation: mongodb 5s; 
+
+}
+/* ---------------------------Techinical skill animatio----------------------- */
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 73%;
+    }
+}  
+
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes figma {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 77%;
+    }
+}
+
+@keyframes nodejs {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 55%;
+    }
+}
+
+@keyframes mongodb {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 53%;
+    }
+}
+
+/* --------------------------------professional ----------------------------- */
+
+.professional{
+    display: grid;
+    grid-template-columns:repeat(2 ,1fr);
+    gap: 1rem;
+
+}
+.box{
+    position: relative;
+    margin: 10px 0px;
+    flex: 1 1 15rem;
+
+}
+
+.box .text{
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+.box .text big{
+    font: 500;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 45%;
+    left: 51%;
+    transform: translate(-50% , -50%);
+}
+
+.box .text small{
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.circle{
+    width: 100%;
+    height: 228px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #fff; */
+
+}
+
+.circle .points{
+    width: 2px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i)*var(--rot))) translateY(-45px);
+    /* animation: glow 0.06s linear forwards;
+    animation-delay: calc(var(--i)*0.06s); */
+}
+    
+
+.points.marked{
+    animation: glow 0.06s linear forwards;
+    animation-delay: calc(var(--i)*0.06s);
+    
+
+} 
+
+ /*--------------- animation for professionalskills ------------------ */
+
+@keyframes glow {
+    0%{
+        background: var(--bg-color);
+        box-shadow: none;
+    }
+    100%{
+        background: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
+    }
+}
+
+
+
+
+
+
+
+/* Responsive */
+
+
+@media screen and (max-width:1000px){
+    .skill-main{
+        grid-template-columns: 1fr;
+    }
+}
